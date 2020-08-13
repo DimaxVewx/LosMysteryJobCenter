@@ -1,5 +1,5 @@
 fx_version 'adamant'
-author 'Dimax'
+author 'Contributor: Dimax - Talion - Keytur - Restray'
 description 'LosMysteryV1 Job center !'
 version '0.0.1'
 game 'gta5'
