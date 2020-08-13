@@ -3,9 +3,6 @@ RMenu.Add('jobcenter', 'main', RageUI.CreateMenu("", "Bonjour à vous, je peux v
 RMenu.Add('jobcenter', 'metier', RageUI.CreateSubMenu(RMenu:Get('jobcenter', 'main'), "", "Choisissez entre tous ces métiers intérim"))
 RMenu.Add('jobcenter', 'organisation', RageUI.CreateSubMenu(RMenu:Get('jobcenter', 'main'), " ", "Interaction Organisation"))
 
-
-
-
 Citizen.CreateThread(function()
     while true do
         RageUI.IsVisible(RMenu:Get('jobcenter', 'main'), true, true, true, function()
