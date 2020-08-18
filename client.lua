@@ -120,19 +120,20 @@ local position = {
       }
 
 
-      Citizen.CreateThread(function ()
-        local blip2 = AddBlipForCoord(-266.00, -961.86, 32.15)
-        SetBlipSprite (blip2, 457)
-        SetBlipDisplay(blip2, 4)
-        SetBlipScale  (blip2, 0.6)
-        SetBlipColour (blip2, 37)
-        SetBlipAsShortRange(blip2, true)
+    Citizen.CreateThread(function()
+        for k,v in pairs(Config.Hospitals) do
+            local blip = AddBlipForCoord(v.Blip.coords)
     
-        BeginTextCommandSetBlipName('STRING')
-        AddTextComponentSubstringPlayerName(_U('blip_jobcenter'))
-        EndTextCommandSetBlipName(blip2)
+            SetBlipSprite(blip, v.Blip.sprite)
+            SetBlipScale(blip, v.Blip.scale)
+            SetBlipColour(blip, v.Blip.color)
+            SetBlipAsShortRange(blip, true)
+    
+            BeginTextCommandSetBlipName('STRING')
+            AddTextComponentSubstringPlayerName(_U('blip_jobcenter'))
+            EndTextCommandSetBlipName(blip)
+        end
     end)
-
     
     
     

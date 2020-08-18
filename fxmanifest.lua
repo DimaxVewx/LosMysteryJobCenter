@@ -16,6 +16,7 @@ client_scripts {
     "src/menu/elements/*.lua",
     "src/menu/items/*.lua",
     "src/menu/panels/*.lua",
+    'config.lua',
 	'client.lua',
     "src/menu/panels/*.lua",
     "src/menu/windows/*.lua",
@@ -25,8 +26,9 @@ client_scripts {
 
 ------------------------------------------------------------------------------
 server_scripts {
-    'server.lua'
+    'server.lua',
     'locales/fr.lua',
+    'config.lua',
 }
 
 dependencies {
