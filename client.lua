@@ -129,8 +129,10 @@ local position = {
         SetBlipAsShortRange(blip2, true)
     
         BeginTextCommandSetBlipName('STRING')
-        AddTextComponentString('Pôle Emploi')
+        AddTextComponentSubstringPlayerName(_U('blip_jobcenter'))
         EndTextCommandSetBlipName(blip2)
     end)
+
+    
     
     

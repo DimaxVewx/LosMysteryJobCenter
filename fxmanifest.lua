@@ -19,12 +19,14 @@ client_scripts {
 	'client.lua',
     "src/menu/panels/*.lua",
     "src/menu/windows/*.lua",
+    'locales/fr.lua',
 
 }
 
 ------------------------------------------------------------------------------
 server_scripts {
-	'server.lua'
+    'server.lua'
+    'locales/fr.lua',
 }
 
 dependencies {
